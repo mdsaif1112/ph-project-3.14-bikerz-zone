@@ -1,0 +1,63 @@
+/* Common */
+
+h2{
+    font-size: 60px;
+}
+
+.header{
+    background: #264653;
+    border-bottom: none;
+}
+.banner{
+    min-height: 95vh;
+    background: #264653;
+}
+.header .navbar .container .navbar-nav{
+    align-items: center;
+}
+.header .navbar .container .navbar-nav .nav-link{
+    color: white;
+}
+
+.banner-btn.btn,
+.nav-btn.btn{
+    background-color: #E76F51;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 26px;
+    text-transform: capitalize;
+    border: 2px solid #E76F51;
+}
+
+.banner-btn.btn:hover,
+.nav-btn.btn:hover{
+    background-color: transparent; 
+    color: white;
+    border-color: #E76F51;
+}
+
+.nav-btn.btn{
+    padding: 6px 25px;
+}
+p{
+    font-size: 20px;
+}
+
+.collection{
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 992px){
+    .header .navbar .container .navbar-nav{
+        align-items: stretch;
+    }
+
+    .header .navbar .container .navbar-collapse{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .header .navbar .container .navbar-collapse .btn{
+        margin-top: 10px;
+    }
+}
