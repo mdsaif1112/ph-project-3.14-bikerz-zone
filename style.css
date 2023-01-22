@@ -1,26 +1,24 @@
 /* Common */
 
-h2{
+h2 {
     font-size: 60px;
+    text-transform: capitalize;
 }
 
-.header{
-    background: #264653;
-    border-bottom: none;
-}
-.banner{
-    min-height: 95vh;
-    background: #264653;
-}
-.header .navbar .container .navbar-nav{
-    align-items: center;
-}
-.header .navbar .container .navbar-nav .nav-link{
-    color: white;
+hr {
+    border-width: 3px;
+    text-align: center;
+    width: 5%;
+    margin: 1rem auto;
+    border-color: #E76F51;
+    opacity: 1;
 }
 
-.banner-btn.btn,
-.nav-btn.btn{
+p {
+    font-size: 20px;
+}
+
+.btn {
     background-color: #E76F51;
     color: white;
     font-weight: 500;
@@ -30,34 +28,193 @@ h2{
     border: 2px solid #E76F51;
 }
 
-.banner-btn.btn:hover,
-.nav-btn.btn:hover{
-    background-color: transparent; 
-    color: white;
+.card-btn{
+    padding: 5px 26px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #E76F51;
     border-color: #E76F51;
 }
 
-.nav-btn.btn{
+.nav-btn {
     padding: 6px 25px;
 }
-p{
-    font-size: 20px;
+
+.carousel-control-next-icon{
+    background-image: url(images/icons/chevron-right-solid.svg);
+}
+.carousel-control-prev-icon{
+    background-image: url(images/icons/chevron-left-solid.svg);
 }
 
-.collection{
+/* Header */
+
+.header {
+    border-bottom: none;
+    margin-bottom: -91px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+/* Banner */
+
+.banner {
+    min-height: 95vh;
+    padding: 150px 0 100px;
+}
+
+/* Collection */
+
+.collection {
     padding: 100px 0;
 }
 
-@media screen and (max-width: 992px){
-    .header .navbar .container .navbar-nav{
+.collection-container .bike-container{
+    margin-top: 100px;
+}
+
+.collection-container .bike-container .col{
+    padding: 0 50px;
+}
+
+
+/* News */
+
+.news {
+    padding: 100px 0;
+}
+.news-card-container{
+    margin-top: 100px;
+}
+
+/* Testimonial */
+
+.testimonial{
+    padding: 100px 0;
+}
+/* FAQ */
+.FAQ{
+    padding: 100px 0;
+}
+.FAQ-container .FAQ-row{
+    margin-top: 100px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px){
+    /* Commons */
+    h2{
+       font-size: 40px;
+    }
+    /* banner */
+    .banner{
+        padding: 100px 0 50px;
+    }
+    /* Collection */
+    .collection{
+        padding: 60px 0;
+    }
+    .collection-container .bike-container{
+        margin-top: 30px;
+    }
+    /* News */
+    .news {
+        padding: 60px 0;
+    }
+    .news-card-container{
+        margin-top: 30px;
+    }
+    /* Testimonial */
+    .testimonial{
+        padding: 60px 0;
+    }
+    /* FAQ */
+    .FAQ{
+        padding: 60px 0;
+    }
+    .FAQ-container .FAQ-row{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* Common */
+
+    .navbar-nav {
         align-items: stretch;
     }
 
-    .header .navbar .container .navbar-collapse{
+    .navbar-collapse {
         margin-top: 20px;
         text-align: center;
     }
-    .header .navbar .container .navbar-collapse .btn{
+
+    .btn {
         margin-top: 10px;
+    }
+
+    h2{
+        font-size: 45px;
+
+        /* Banner */
+    }
+    .banner {
+        min-height: auto;
+        padding: 120px 0 80px;
+    }
+
+    /* Collection */
+    .collection{
+        padding: 60px 0;
+    }
+    .collection-container .bike-container{
+        margin-top: 30px;
+    }
+    /* News */
+    .news {
+        padding: 60px 0;
+    }
+    .news-card-container{
+        margin-top: 50px;
+    }
+    /* Testimonial */
+    .testimonial{
+        padding: 60px 0;
+    }
+    /* FAQ */
+    .FAQ{
+        padding: 60px 0;
+    }
+    .FAQ-container .FAQ-row{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .collection{
+        padding: 80px 0;
+    }
+    .collection-container .bike-container{
+        margin-top: 50px;
+    }
+    /* News */
+    .news {
+        padding: 80px 0;
+    }
+    .news-card-container{
+        margin-top: 50px;
+    }
+    /* Testimonial */
+    .testimonial{
+        padding: 80px 0;
+    }
+    /* FAQ */
+    .FAQ{
+        padding: 80px 0;
     }
 }
